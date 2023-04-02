@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Pets&Pets</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Club <br> Pets&Pets</h1>
+    </header>
+
+    <main>
+        <section class="cadastro">
+            <h2>Cadastro</h2>
+
+            <div class="dados-pet">
+                
+                <h3>Dados do Pet</h3>
+
+                <form>
+                                
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="input-alterado" required>
+
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" class="input-alterado" required>
+
+                    <fieldset class="tipo">
+                        <legend>Eu sou:</legend>
+                        <select name="" id="">
+                            <option value="">Canino</option>
+                            <option value="">Felino</option>
+                            <option value="">Ave</option>
+                            <option value="">Reptil</option>
+                            <option value="">Peixe</option>
+                            <option value="">Roedor</option>
+                            <option value="">Coelho</option>
+                            <option value="">Inseto</option>
+                            <option value="">Anfíbio</option>
+                            <option value="">Aracnídeo</option>
+                        </select>
+                    </fieldset>
+
+                    <label for="raça">Raça</label>
+                    <input type="text" id="raça" class="input-alterado">
+
+                    <label for="data">Data de nascimento ou adoção</label>
+                    <input type="date" id="data" class="input-alterado">
+
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" class="input-alterado" min="0" max="200">
+
+                    <fildset class="necessidade">
+                        <legend>Tem alguma necessidade especial?</legend>
+                        <br>
+                        <label for="necessidade">
+                            <input type="checkbox" id="necessidade">
+                            Sim
+                        </label>
+                        <br>
+                        <div id="definir-necessidade" style="display: none;">
+                            <label for="qual">Qual necessidade?</label>
+                            <input type="text" id="qual">
+                        </div>
+                    </fildset>
+
+                    <label for="brinquedo">Brinquedo Favorito</label>
+                    <input type="text" id="brinquedo" class="input-alterado">
+
+                    <fieldset>
+                        <legend>Eu sou mais...</legend>
+
+                        <div class="range">
+                            <legend class="range-esquerda">Quietinho</legend>
+                            <input type="range">
+                            <legend class="range-direita">Brincalhão</legend>
+                        </div>
+
+                    </fieldset>
+
+                    <label for="biografia">Biografia</label>
+                    <textarea name="" id="biografia" cols="70" rows="10"></textarea>
+                    
+                    <label for="foto">Foto do Perfil</label>
+                    <input type="file" accept="image/png, image/jpeg">
+                    
+                </form>
+            </div>
+
+            <div class="dados-responsavel">
+                
+                <h3>Dados da Pessoa Responsável</h3>
+
+                <form>
+                                
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" class="input-alterado" required>
+
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome" class="input-alterado" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-alterado" required placeholder="seuemail@dominio.com">
+
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" class="input-alterado" required placeholder="(XX) XXXXX XXXX">
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" class="input-alterado" placeholder="(XX) XXXX XXXX">
+
+                    <fieldset>
+                        <legend>Quero receber os cronogramas de atividade por:</legend>
+                        
+                        <label for="radio-email"><input type="radio" name="cronogramas" id="radio-email" checked>Email</label>
+                        <label for="radio-whatsapp"><input type="radio" name="cronogramas" id="radio-whatsapp">Whatsapp</label>
+                        <label for="radio-sms"><input type="radio" name="cronogramas" id="radio-sms">SMS</label>
+
+                    </fieldset>
+                    
+                </form>
+            </div>
+
+            <div class="dados-login">
+
+                <h3>Dados do Login</h3>
+
+                <form>
+                    <label for="login">Login</label>
+                    <input type="text" name="" id="login" class="input-alterado">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" class="input-alterado">
+                    <label for="confirma-senha">Confirmar Senha</label>
+                    <input type="password" id="confirma-senha" class="input-alterado">
+                </form>
+
+            </div>
+
+            <label for="check-news"><input type="checkbox" id="check-news" checked>Receber novidades por email.</label>
+
+            <input type="submit" value="Entrar pro Club" class="enviar">
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="coluna-rodape">
+            <h2>Club <br> Pets&Pets</h2>
+        </div>
+
+        <div class="coluna-rodape">
+            <ul class="redes-sociais">
+                <li><a href="#"><img src="images/logo insta.png" alt="logo Instagram" id="insta"></a></li>
+                <li><a href="#"><img src="images/logo facebook.png" alt="logo Facebook" id="face"></a></li>
+                <li><a href="#"><img src="images/logo whats.png" alt="logo Whatsapp" id="whats"></a></li>
+                <li><a href="#"><img src="images/logo tiktok.png" alt="logo Tiktok" id="tiktok"></a></li>
+            </ul>
+        </div>
+
+        <div class="coluna-rodape">
+            <ul class="informacoes">
+                <li>Av. Boa Vida, Primavera, N.1234</li>
+                <li>Aberto de Domingo a Domingo</li>
+                <li>Das 7h às 21h</li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
